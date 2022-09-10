@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sunflower</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    />
+
+    <!-- <script src="firebase.js" type="module"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <!-- <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    /> -->
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="left-side">
+        <a href="wildLands.html">Wild Lands</a>
+        <button id="Microscope">Microscope</button>
+        <span>Season</span>
+      </div>
+      <div class="right-side">
+        <span id="mana">Mana: </span>
+        <button>Shop</button>
+        <button id="sign">Sign In</button>
+      </div>
+    </div>
+    <div class="game">
+      <img src="Images/background(200x1200).png" alt="" />
+
+      <div id="fieldSpot1">
+        <button
+          class="fieldSpot"
+          style="background: url(Images/FieldSpot200.png); border: none"
+        ></button>
+      </div>
+      <span class="tut-text"> ← Click Here For Your Starter</span>
+      <div class="form-popup" id="myForm">
+        <form id="formC" class="form-cont">
+          <input type="image" src="Images/qmarkt.png" alt="Flower 1" />
+          <input type="image" src="Images/qmarkt.png" alt="Flower 2" />
+          <input type="image" src="Images/qmarkt.png" alt="Flower 3" />
+        </form>
+      </div>
+      <div class="micro-popup" id="microPop">
+        <div>
+          <img id="flowerCont" src="Images/flowerLiq200.png" alt="flower" />
+        </div>
+        <div class="text-box">
+          <span id="species">Species:</span>
+          <span id="traits">Traits:</span>
+          <span id="chromosome">Chromosome:</span>
+          <span id="fitness">Fitness:</span>
+          <span id="generation">Generation:</span>
+          <!-- <span id="rarity"></span> -->
+          <button>Cross Over?</button>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module">
+     
+    </script> -->
+    <script src="/public/firebase.js" type="module"></script>
+    <script src="/public/index.js" type="module"></script>
+  </body>
+</html>

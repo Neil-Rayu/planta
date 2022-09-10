@@ -1,0 +1,17 @@
+span {
+  font-family: 'Square Peg', serif;
+  font-size: 5rem;
+}
+.background-img {
+  background-image: url(back.jpg);
+  filter: blur(8px);
+  width: 100%;
+}
+.letter-wrap {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: column;
+}
