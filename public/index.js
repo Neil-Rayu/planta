@@ -301,3 +301,24 @@ function deriveInfo(chromosomes) {
   //document.getElementById('rarity').innerText = Math.pow(.5, traitCnt)
   return num;
 }
+
+//shop
+let shopButton = document.getElementById('shop');
+
+shopButton.onclick = () => {
+  document.getElementById('shop-container').style.display = 'flex';
+};
+
+let closeShop = document.getElementById('close-shop');
+
+closeShop.onclick = () => {
+  document.getElementById('shop-container').style.display = 'none';
+};
+
+let buyDNA = document.getElementById('buy-dna');
+let dnaStore = 0;
+
+buyDNA.onclick = () => {
+  dnaStore += 1;
+  console.log(dnaStore);
+};
