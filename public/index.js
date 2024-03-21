@@ -5,26 +5,27 @@ import { GoogleAuthProvider, signOut, signInWithPopup } from 'firebase/auth';
 
 let button = document.getElementById('sign');
 let provider = new GoogleAuthProvider();
-let signedIn = false;
+export let signedIn = false;
 let geneViewMode = false;
-button.onclick = function sign() {
+button.onclick = async function sign() {
   if (signedIn) {
     signOut(auth);
     signedIn = false;
     button.innerText = 'Sign In';
   } else {
-    signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider);
     signedIn = true;
     button.innerText = 'Sign Out';
     getData();
   }
 };
-async function getData() {
+export async function getData() {
   const docRef = doc(db, 'garden', uid);
   console.log(docRef);
   const docSnap = await getDoc(docRef);
   geneViewMode = true;
   if (docSnap.exists()) {
+    console.log(docSnap.data().chromosomes);
     let spec = deriveInfo(docSnap.data().chromosomes);
     let img = document.createElement('img');
 
@@ -34,6 +35,9 @@ async function getData() {
     } else if (spec == 1) {
       img.src = 'Images/flowerTim200.png';
       document.getElementById('flowerCont').src = 'Images/flowerTim200.png';
+    } else if (spec == 3) {
+      img.src = 'Images/frostflower200.png';
+      document.getElementById('flowerCont').src = 'Images/frostflower200.png';
     } else {
       img.src = 'Images/flowerImp200.png';
       document.getElementById('flowerCont').src = 'Images/flowerImp200.png';
@@ -254,6 +258,7 @@ function deriveInfo(chromosomes) {
   } else if (chromosomes[0].includes('110100100') && phenoCnt > 13) {
     species = 'Ultimus Fabularis';
     traits = '???';
+    num = 3;
   } else if (traitCnt <= 1) {
     species = 'Liquidum';
     traits = 'Patient, Slow, Calm';

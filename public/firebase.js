@@ -9,6 +9,7 @@ import {
   signInWithPopup,
 } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { getData } from './index.js';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -32,6 +33,7 @@ const auth = getAuth(app);
 let provider = new GoogleAuthProvider();
 let uid = null;
 
+export let signedIn = false;
 onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
@@ -39,6 +41,9 @@ onAuthStateChanged(auth, (user) => {
     uid = user.uid;
     console.log(uid);
     // ...
+    //get user data
+    getData();
+    signedIn = true;
   } else {
     // User is signed out
     // ...
