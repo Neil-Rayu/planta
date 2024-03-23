@@ -1,0 +1,209 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.game {
+  display: flex;
+  width: 100%;
+}
+.fieldSpot {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 1;
+}
+
+.form-popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.form-cont {
+  display: flex;
+  align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+.micro-popup {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  /* text-shadow: -.5px -.5px 0 #fff, .5px -.5px 0 #fff, -.5px .5px 0 #fff, .5px .5px 0 #fff; */
+  font-size: x-large;
+  color: white;
+}
+
+#wildSpot1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+
+#wildSpot2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 230px;
+  left: 230px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+
+#wildSpot3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 440px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot4 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 400px;
+  left: 440px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot5 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 500px;
+  left: 40px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot6 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 440px;
+  left: 1400px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot7 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 1440px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot8 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 1100px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot9 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 690px;
+  left: 1440px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+#wildSpot10 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 690px;
+  left: 400px;
+  /* background: url(Images/FieldSpot200.png); */
+  z-index: 2;
+}
+
+#nightScreen {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0%;
+  z-index: 1;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.tut-text {
+  position: absolute;
+  top: 130px;
+  left: 230px;
+  font-size: x-large;
+}
+
+/* Shop */
+#shop-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.shop-menu {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: white;
+}
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}

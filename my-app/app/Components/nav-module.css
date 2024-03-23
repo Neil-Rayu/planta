@@ -1,0 +1,36 @@
+
+#--nav-main {
+    width: 100svw;
+    height: 3svw;
+    display: grid;
+    grid-template-columns: 50svw 50svw;
+    align-items: center;
+    background-color: #9bbfdf;
+    color: black;
+}
+#--nav-list {
+    list-style: none;
+    display: flex;
+}
+#--nav-list li {
+    margin: 0 1svw;
+}
+#--nav-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+#--nav-right {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.--nav-buttons {
+    width: 7.5svw;
+    border-radius: 0.5svw;
+    cursor: pointer;
+}
