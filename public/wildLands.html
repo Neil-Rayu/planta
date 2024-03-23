@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Lands</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="left-side">
+        <a href="index.html">Home</a>
+        <span id="timer">0:00</span>
+        <button onclick="clearInt()">Stop</button>
+        <span id="season">Season: </span>
+      </div>
+      <div class="right-side">
+        <span id="mana">Mana: </span>
+        <button id="shop">Shop</button>
+      </div>
+    </div>
+    <div class="game">
+      <div id="nightScreen"></div>
+      <img src="Images/background(200x1200).png" alt="" />
+      <div id="wildSpot1" onclick="spotClick(0)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot2" onclick="spotClick(1)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot3" onclick="spotClick(2)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot4" onclick="spotClick(3)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot5" onclick="spotClick(4)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot6" onclick="spotClick(5)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot7" onclick="spotClick(6)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot8" onclick="spotClick(7)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot9" onclick="spotClick(8)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div id="wildSpot10" onclick="spotClick(9)">
+        <img class="flowerImg" src="Images/flowerLiq200.png" alt="" />
+      </div>
+      <div class="micro-popup" id="microPopWild">
+        <div>
+          <img id="flowerCont" src="Images/flowerLiq200.png" alt="flower" />
+        </div>
+        <div class="text-box">
+          <span id="species">Species:</span>
+          <span id="traits">Traits:</span>
+          <span id="chromosome">Chromosome:</span>
+          <span id="fitness">Fitness:</span>
+          <span id="generation">Generation:</span>
+          <!-- <span id="rarity"></span> -->
+          <button onclick="docClick()">Copy To Research Notes?</button>
+        </div>
+      </div>
+      <!-- <div class="notebook">
+        <button></button>
+        <div class="content-holer"></div>
+      </div> -->
+    </div>
+
+    <script src="wildLands.js"></script>
+  </body>
+</html>
